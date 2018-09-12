@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/shop/main",
+    "pages/user/main",
+    "pages/search/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的喜盈门",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888788",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#fcfcfc",
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "首页",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/home-active.png"
+      },
+      {
+        "pagePath": "pages/shop/main",
+        "text": "找店",
+        "iconPath": "static/image/shop.png",
+        "selectedIconPath": "static/image/shop-active.png"
+      },
+      {
+        "pagePath": "pages/user/main",
+        "text": "用户",
+        "iconPath": "static/image/user.png",
+        "selectedIconPath": "static/image/user-active.png"
+      }
+    ]
+  }
+}
