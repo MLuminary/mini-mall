@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .searchbox {
-  width: 630rpx;
+  width: 610rpx;
   background-color: #f0f0f0;
   height: 60rpx;
   border-radius: 30px;
