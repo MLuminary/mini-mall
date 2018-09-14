@@ -209,7 +209,7 @@ export default {
   width: 750rpx;
   margin-top: 30rpx;
   display: flex;
-  height: 40px;
+  height: 80rpx;
 }
 .selectBoxs .selectBtn {
   width: 375rpx;
@@ -224,7 +224,8 @@ export default {
   border-bottom: 1px solid transparent;
 }
 .areaContent {
-  position: relative;
+  position: absolute;
+  top: 170rpx;
   width: 750rpx;
   background-color: #fff;
   color: #7f7f7f;
@@ -247,7 +248,8 @@ export default {
   font-weight: bold;
 }
 .categoryContent {
-  position: relative;
+  position: absolute;
+  top: 170rpx;
   width: 750rpx;
   background-color: #fff;
   color: #7f7f7f;
