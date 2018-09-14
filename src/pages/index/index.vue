@@ -36,7 +36,7 @@
         <h1>商家优选</h1>
         <span class="more">更多 ＞</span>
       </div>
-      <div class="card">
+      <div class="card" @click="jumpToShopDetail">
         <div class="card-info">
           <span><span class="tag">卫浴</span><span class="title">TOTO卫浴喜盈门旗舰店</span></span><span class="location"><img style="width:18rpx;height:25rpx;" src="../../../static/image/location.png"> L3-305</span>
         </div>
@@ -47,7 +47,7 @@
           <img src="../../../static/image/bg1.jpg" alt="">
         </div>
       </div>
-      <div class="card">
+      <div class="card" @click="jumpToShopDetail">
         <div class="card-info">
           <span><span class="tag">卫浴</span><span class="title">TOTO卫浴喜盈门旗舰店</span></span><span class="location"><img style="width:18rpx;height:25rpx;" src="../../../static/image/location.png"> L3-305</span>
         </div>
@@ -109,7 +109,14 @@ export default {
     fakeSearch
   },
 
-  methods: {},
+  methods: {
+    // 跳转到 shopDetail
+    jumpToShopDetail () {
+      wx.navigateTo({
+        url: '/pages/shopdetail/main'
+      })
+    }
+  },
 
   created () {}
 }

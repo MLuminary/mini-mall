@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/shopdetail/main",
-    "pages/shop/main",
     "pages/index/main",
     "pages/user/main",
-    "pages/search/main"
+    "pages/search/main",
+    "pages/shopdetail/main",
+    "pages/shop/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

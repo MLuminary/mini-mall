@@ -14,6 +14,7 @@ export default {
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+  font-family: '黑体'
 }
 /* this rule will be remove */
 * {
