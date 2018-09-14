@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/allactivity/main",
     "pages/index/main",
     "pages/user/main",
     "pages/search/main",

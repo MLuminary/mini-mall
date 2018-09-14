@@ -14,7 +14,7 @@
       </swiper>
     </div>
     <div class="selectBoxs">
-      <div class="selectBox">
+      <div class="selectBox" @click="jumpToActivity">
         <img class="iconBox" style="width:50rpx;height:50rpx" src="../../../static/image/gift.png">
         <p>活动</p>
       </div>
@@ -115,9 +115,14 @@ export default {
       wx.navigateTo({
         url: '/pages/shopdetail/main'
       })
+    },
+    // 跳转到活动页面
+    jumpToActivity () {
+      wx.navigateTo({
+        url: '/pages/allactivity/main'
+      })
     }
   },
-
   created () {}
 }
 </script>
