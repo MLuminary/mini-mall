@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="activityList" v-if="activityFlag">
-      <div class="scard">
+      <div class="scard" @click="jumpToActivityDetail">
         <div class="text-box">
           <p style="font-size:14px;margin-top:30px;">C+创意空间</p>
           <p style="font-size:13px;color:#bdbcbd;margin-top:20rpx;">春暖花开装修节，下单即送豪礼</p>
@@ -19,7 +19,7 @@
           <img src="../../../static/image/bg2.jpg">
         </div>
       </div>
-      <div class="scard">
+      <div class="scard" @click="jumpToActivityDetail">
         <div class="text-box">
           <p style="font-size:14px;margin-top:30px;">C+创意空间</p>
           <p style="font-size:13px;color:#bdbcbd;margin-top:20rpx;">春暖花开装修节，下单即送豪礼</p>
@@ -29,7 +29,7 @@
           <img src="../../../static/image/bg2.jpg">
         </div>
       </div>
-      <div class="scard">
+      <div class="scard" @click="jumpToActivityDetail">
         <div class="text-box">
           <p style="font-size:14px;margin-top:30px;">C+创意空间</p>
           <p style="font-size:13px;color:#bdbcbd;margin-top:20rpx;">春暖花开装修节，下单即送豪礼</p>
@@ -67,6 +67,12 @@ export default {
   methods: {
     chooseFlag (type) {
       this.activityFlag = type
+    },
+    // 跳转到活动详情
+    jumpToActivityDetail () {
+      wx.navigateTo({
+        url: '/pages/activitydetail/main'
+      })
     }
   },
   components: {
