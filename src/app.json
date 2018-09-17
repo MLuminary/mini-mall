@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/coupon/main",
+    "pages/index/main",
     "pages/activitydetail/main",
     "pages/allactivity/main",
-    "pages/index/main",
     "pages/user/main",
     "pages/search/main",
     "pages/shopdetail/main",

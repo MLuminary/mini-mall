@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="activityCalender" v-if="!activityFlag">
-      <Calendar />
+      <Calendar arrowLeft="../../../static/image/left.png" arrowRight="../../../static/image/right.png"  />
       <div class="card-info">
           <span><span class="tag">4.1</span><span class="title">罗布特卡沃利满额立减，豪礼送不停</span></span>
       </div>

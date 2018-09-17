@@ -18,7 +18,7 @@
         <img class="iconBox" style="width:50rpx;height:50rpx" src="../../../static/image/gift.png">
         <p>活动</p>
       </div>
-      <div class="selectBox">
+      <div class="selectBox" @click="jumpToCoupon">
         <img class="iconBox" style="width:62rpx;height:45rpx" src="../../../static/image/ticket.png">
         <p>领券</p>
       </div>
@@ -126,6 +126,12 @@ export default {
     jumpToActivityDetail () {
       wx.navigateTo({
         url: '/pages/activitydetail/main'
+      })
+    },
+    // 跳转到活动详情
+    jumpToCoupon () {
+      wx.navigateTo({
+        url: '/pages/coupon/main'
       })
     }
   },
