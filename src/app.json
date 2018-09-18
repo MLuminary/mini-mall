@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/coupon/main",
+    "pages/user/main",
     "pages/index/main",
+    "pages/coupon/main",
     "pages/activitydetail/main",
     "pages/allactivity/main",
-    "pages/user/main",
     "pages/search/main",
     "pages/shopdetail/main",
     "pages/shop/main"

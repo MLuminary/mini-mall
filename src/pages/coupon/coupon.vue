@@ -136,7 +136,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20rpx 0;
+  margin: 10rpx 0;
 }
 .card .img-box {
   width: 200rpx;
