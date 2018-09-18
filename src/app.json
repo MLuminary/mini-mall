@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/addaddress/main",
     "pages/user/main",
     "pages/index/main",
     "pages/coupon/main",
