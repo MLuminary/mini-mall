@@ -61,11 +61,39 @@
         <p>地址管理</p>
       </div>
     </div>
+    <div class="function-cards">
+      <div class="card" @click="jumpToCertificate">
+        <div class="img-box">
+          <img src="../../../static/image/certificate.png">
+        </div>
+        <p>实名认证</p>
+      </div>
+      <div class="card">
+        <div class="img-box">
+          <img src="../../../static/image/bank.png">
+        </div>
+        <p>银行卡绑定</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  export default {
+    data () {
+      return {
 
+      }
+    },
+    methods: {
+      // 跳转到实名认证界面
+      jumpToCertificate () {
+        wx.navigateTo({
+          url: '/pages/certificate/main'
+        })
+      }
+    }
+  }
 </script>
 
 <style scoped>
@@ -97,7 +125,7 @@
 .function-cards {
   width: 710rpx;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 50rpx;
 }
 .function-cards .card{

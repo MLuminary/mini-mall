@@ -1,7 +1,11 @@
 {
   "pages": [
-    "pages/addaddress/main",
+    "pages/certifisuccess/main",
+    "pages/certifitime/main",
+    "pages/certififail/main",
+    "pages/certificate/main",
     "pages/user/main",
+    "pages/addaddress/main",
     "pages/index/main",
     "pages/coupon/main",
     "pages/activitydetail/main",
