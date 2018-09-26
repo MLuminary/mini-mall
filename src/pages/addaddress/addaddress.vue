@@ -1,44 +1,44 @@
 <template>
-<div class="container">
-  <form class="form-sub" @submit="formSubmit" report-submit="true">
-    <div class="input-line">
-      <div class="txt">收货人</div>
-      <div class="input-box">
-        <input name="consignee" type="text">
+  <div class="container">
+    <form class="form-sub" @submit="formSubmit" report-submit="true">
+      <div class="input-line">
+        <div class="txt">收货人</div>
+        <div class="input-box">
+          <input name="consignee" type="text">
+        </div>
       </div>
-    </div>
-    <div class="input-line">
-      <div class="txt">联系电话</div>
-      <div class="input-box">
-        <input name="phone"  type="number">
+      <div class="input-line">
+        <div class="txt">联系电话</div>
+        <div class="input-box">
+          <input name="phone"  type="number">
+        </div>
       </div>
-    </div>
-    <div class="input-line">
-      <div class="txt">所在地区</div>
-      <div class="input-box">
-        <picker class="weui-btn" mode="region" :value="region" @change="CityChange">
-          <div :class="{ 'text-right': checkRegion }" style="color:#989898">{{region}}</div>
-        </picker>
+      <div class="input-line">
+        <div class="txt">所在地区</div>
+        <div class="input-box">
+          <picker class="weui-btn" mode="region" :value="region" @change="CityChange">
+            <div :class="{ 'text-right': checkRegion }" style="color:#989898">{{region}}</div>
+          </picker>
+        </div>
       </div>
-    </div>
-    <div class="text-line">
-      <div class="txt">详细地址</div>
-      <div class="input-box">
-        <textarea style="color:#989898" class="text-area" name="address" placeholder="请输入详细地址信息"></textarea>
+      <div class="text-line">
+        <div class="txt">详细地址</div>
+        <div class="input-box">
+          <textarea style="color:#989898" class="text-area" name="address" placeholder="请输入详细地址信息"></textarea>
+        </div>
       </div>
-    </div>
-    <div class="input-line default">
-      <div class="txt">设置默认地址</div>
-      <div class="input-box">
-        <switch checked name="default" />
+      <div class="input-line default">
+        <div class="txt">设置默认地址</div>
+        <div class="input-box">
+          <switch checked name="default" />
+        </div>
       </div>
-    </div>
-    <input name="region" type="text" disabled :value="region" style="visibility: hidden;">
-    <div class="btn-sub">
-      <button formType="submit">保存</button>
-    </div>
-  </form>
-</div>
+      <input name="region" type="text" disabled :value="region" style="visibility: hidden;">
+      <div class="btn-sub">
+        <button formType="submit">保存</button>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>
